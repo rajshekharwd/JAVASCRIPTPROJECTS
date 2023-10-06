@@ -1,0 +1,340 @@
+/*/*...................First-Project...................ColorSwithcher.................................*/
+.ColorSwithcher{
+padding: 100px 0px;
+background: #494949 ;
+
+}
+
+.box{
+
+text-align: center;
+
+}
+#buttons{
+display: flex;
+justify-content: center;
+
+}
+#red{
+background: red;
+width: 50px;
+height: 50px;
+margin-left: 30px;
+border-radius: 50%;
+border: none;
+}
+
+#blue{
+background: blue;
+width: 50px;
+height: 50px;
+margin-left: 30px;
+border-radius: 50%;
+ border: none;
+}
+#purple{
+background: purple;
+width: 50px;
+height: 50px;
+margin-left: 30px;
+border-radius: 50%;
+ border: none;
+}
+#yellow{
+background: yellow;
+width: 50px;
+height: 50px;
+margin-left: 30px;
+border-radius: 50%;
+ border: none;
+}
+#white{
+background: white;
+width: 50px;
+height: 50px;
+margin-left: 30px;
+border-radius: 50%;
+ border: none;
+}
+/*...................Second-Project...................Calculator.................................*/
+.calculator-section{
+padding: 100px 0;
+background: #a77538
+}
+.calculator {
+    padding: 10px;
+    height: auto;
+    width: 265px;
+    margin: auto;
+    background-color: #99ccff;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 14px;
+    }
+#result {
+font-family: 'Montserrat', sans-serif;
+    background-color: #a2af77;
+    color: white;
+    width: 108%;
+    border: none;
+    font-size: 44px;
+    margin-left: -10px;
+    padding-left: 23px;
+    font-weight: 500;
+    padding-right: 24px;
+}
+
+#num{
+    background: #4a5f7e;
+    color: #fff;
+    font-size: 16px;
+}
+ .buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    }
+    #GST{
+        font-size: 12px;
+        padding: 8px;
+    }
+
+button{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #a66b6b;
+    color: #fff;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    margin-top:5px;
+    border: none;
+    font-weight: 700;
+    border-radius: 50%;
+    
+}
+
+/*.........Third-Project...........form-validation.....................
+
+*/
+.form-validation-section{
+    padding: 100px 0;
+background:#acc9d8;
+}
+.form-validation{
+   width: 354px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f4f4f4;
+    box-shadow: rgba(12, 8, 8, 0.58) 1px 1px 6px 1px, rgba(210, 129, 46, 0.23) 0px 6px 6px;
+    border-radius: 7px;
+    }
+
+    .form {
+    padding: 10px 20px;
+}
+
+.h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Form-validation{
+    display: flex;
+    align-items: center
+    
+}
+
+ label{
+    color: #777;
+    margin-bottom: 5px;
+   padding-left: 10px;
+   
+   
+}
+ input {
+    border: solid 2px #f0f0f0;
+    border-radius: 3px;
+    padding: 10px;
+    color: #3e356f;
+    margin-bottom: 5px;
+    font-size: 14px;
+     border: none;
+     width: 100%;
+     
+
+    }
+.error{
+    color: #dc3545;
+}
+#submit{
+background-color: #3994ef;
+color: #fff;
+font-size: 20px;
+
+}
+
+
+/*.........fourt-Project...........form-validation.....................
+
+*/
+.Clock-section{
+    padding: 100px 0; 
+background: #5f6e90;
+}
+#clock {
+  background: #ececec;
+  width: 150px;
+  height: 150px;
+  margin: 8% auto 0;
+  border-radius: 50%;
+ position: relative;
+  box-shadow: 0 2vw 4vw -1vw rgba(0,0,0,0.8);
+}
+.dot {
+ width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background: #231e25;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 2px 4px -1px #3994ef;
+}
+
+#hourhand {
+  width: 20%;
+  z-index: 3;
+  background: #1dd681;
+   right: 50%;
+  height: 2px;
+ position: absolute;
+  top: 48%;
+  border-radius: 6px;
+  transform-origin: 100%;
+  transform:rotate(474.5deg);
+
+}
+#minutehand {
+  height: 3px;
+  z-index: 6;
+  background: #666;
+  width: 25%;
+   right: 50%;
+  height: 2px;
+ position: absolute;
+  top: 48%;
+  border-radius: 6px;
+  transform-origin: 100%;
+}
+#secondhand {
+  background: gold;
+  width: 28%;
+  z-index: 9;
+   right: 50%;
+  height: 2px;
+ position: absolute;
+  top: 48%;
+  border-radius: 6px;
+  transform-origin: 100%;
+}
+#clock span {
+position: absolute;
+transform:rotate(calc(30deg * var(--i)));
+text-align: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 4px;
+}
+#clock span b{
+transform:rotate(calc(-30deg * var(--i)));
+display: inline-block;
+}
+/* //second-watch */
+.second-watch{
+background: rgb(255, 255, 255);
+    color: rgb(232, 84, 84);
+    width: 265px;
+    height: 61px;
+    box-shadow: 5px 0px 28px 13px rgba(221, 66, 66, 0.2);
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 43px;
+    font-size: 44px;
+    text-align: center;
+    font-weight: 700;
+}
+/* ...................calendar........................
+ */
+ /* Basic styling for the calendar */
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  tr{
+    background: beige;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+
+ /*/<!-- .........fifth-Project...........unit-changer.....................
+
+     -->*/
+
+
+ .unit-changer{
+     padding: 100px 0; 
+background: #a74949;
+ }
+
+ .wrapper{
+  width: 650px;
+    background: #3e356f;
+    margin:  auto ;
+    height: auto;
+    border-radius: 8px;
+    padding: 10px;
+ }
+ .input-box label{
+  color: #f7dc1e;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+input[type=number] {
+font-family: 'Montserrat', sans-serif;
+   font-size: 22px;
+    border-radius: 5px;
+    width: 90%;
+     border: none;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.equal{
+color: white;
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.input-inner{
+    display: flex;
+}

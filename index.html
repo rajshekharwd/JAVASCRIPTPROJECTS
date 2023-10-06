@@ -1,0 +1,348 @@
+	<!doctype html>
+	<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>js.project</title>
+	<!-- bootstrap-cdn-file -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<!-- bootstrap-icon-cdn-file -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<!--font-family-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Playfair+Display+SC&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<!-- css-file -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!--js-file-->
+
+	</head>
+	<body>
+
+<!-- ..............................First-Project...................ColorSwithcher................................
+	-->
+	<section class="ColorSwithcher" id="box">
+	<div class="container" >
+	<div class="box" >
+	<div class="title-box" style="text-align: center;">
+	<h1 style="color: white">Project-1</h1>	
+	<h1 style=" color: #ffffff">Color Swithcher</h1>
+
+	</div>
+	<div id="buttons">
+	<button onclick="myFunction('red')"  id="red">  </button>
+	<button onclick="myFunction('blue')"  id="blue">  </button>
+	<button onclick="myFunction('purple')"  id="purple">  </button>
+	<button onclick="myFunction('yellow')"  id="yellow">  </button>
+	<button onclick="myFunction('white')"  id="white">  </button>
+	</div>
+	</div>
+	</div>
+	</section> 
+	<!-- ...................Second-Project...................calculator................................ -->
+	 <section class="calculator-section">
+	<div class="container">
+	<div class="title-box" style="text-align: center;">
+	<h1>Project-2</h1>	
+	<h1 style=" color: black">Calculator</h1>
+	</div>
+	<div class="calculator" >
+		
+	<input  type="text" id="result"  placeholder="0">
+	<div class="buttons">
+	<button onclick="Percentage('%')">%</button>
+	<button onclick="GST()" id="GST">18%<br>GST</button>
+	<button onclick="clearDisplay()" id="clr">C</button>
+	<button onclick="dlc()"  id="del"  >DEL</button>
+          <button onclick="Square('x²')">x²</button>
+			<button onclick="cube('x³')">x³</button>
+			<button onclick="SquareRoot('√')">√</button>
+			<button onclick="Display('/')">÷</button>
+	       <button onclick="Display('1')" id="num">1</button>
+            <button onclick="Display('2')" id="num">2</button>
+			<button onclick="Display('3')" id="num">3</button>
+			<button onclick="Display('*')">×</button>
+			<button onclick="Display('4')" id="num">4</button>
+			<button onclick="Display('5')" id="num">5</button>
+			<button onclick="Display('6')" id="num">6</button>
+			<button onclick="Display('+')">+</button>
+			<button onclick="Display('7')" id="num">7</button>
+			<button onclick="Display('8')" id="num">8</button>
+			<button onclick="Display('9')" id="num">9</button>
+			<button onclick="Display('-')">-</button>
+			<button onclick="Display('0')" id="num">0</button>
+			<button onclick="Display('.')" id="num">.</button>
+			<button onclick="cubeRoot('∛')">∛</button>
+			<button onclick="calculate()" id="equal">=</button>
+        </div>
+	
+	</div>
+	</div>
+	</section> 
+
+	<!-- *.........Third-Project...........form-validation.....................*/
+	-->
+	<section class="form-validation-section">
+	<div class="container" >
+	<div class="box" >
+	<div class="title-box" style="text-align: center;">
+	<h1 style="color: white">Project-3</h1>	
+	<h1 style=" color: #ffffff">Form-validation</h1>
+	</div>
+	<div class="form-validation form">
+	<h1>Sign Up</h1>
+
+	
+  <form id="registrationForm" onsubmit="validateForm(event)">
+	<!-- Username -->
+	<div class="Form-validation">
+	  <label for="username">Username:</label>
+		<input type="text" id="username" name="username"  placeholder="Enter your username" autocomplete="off" required>
+		<span id="usernameError" class="error"></span>
+	</div>
+		<!-- Email -->
+		<div class="Form-validation">
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="off" required style="margin-left: 34px;"><br>
+		<span id="emailError" class="error"></span>
+</div>
+		<!-- Phone: -->
+		<div class="Form-validation">
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number" autocomplete="off" required style="margin-left: 28px;"><br>
+		<span id="phoneError" class="error"></span>
+	</div>
+		<!-- Password -->
+		<div class="Form-validation">
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="off" required style="margin-left: 5px;"><br>
+		<span id="passwordError" class="error"></span>
+		</div>
+		<!-- Confirm Password: -->
+		<div class="Form-validation">
+		<label for="confirmPassword">Confirm Password:</label>
+		<input type="password" id="confirmPassword" name="confirmPassword"  placeholder="Confirm your password" autocomplete="off"  required style="margin-left: px;"><br>
+		<span id="confirmPasswordError" class="error"></span>
+		</div>
+		<!-- submit -->
+		<input type="submit" id="submit" value="Submit">
+	</form>
+</div>
+</div>
+</div>
+
+	</section> 
+	<!-- /*.........fourt-Project...........form-validation.....................
+
+	*/ -->
+	 <section class="Clock-section">
+	<div class="container" >
+	<div class="box" >
+	<div class="title-box" style="text-align: center;">
+	<h1 style="color: white">Project-4</h1>	
+	<h1 style=" color: #ffffff">Anolog Watch</h1>
+
+	</div>
+	<div id="clock">
+
+	<div class="dot"></div>
+	<div>
+	<div  id ="hourhand"></div>
+	<div  id ="minutehand"></div>
+	<div  id ="secondhand"></div>
+	</div>
+	<div>
+	<span style="--i:1;"><b> 1</b></span>
+	<span style="--i:2;"><b> 2</b></span>
+	<span style="--i:3;"><b> 3</b></span>
+	<span style="--i:4;"><b> 4</b></span>
+	<span style="--i:5;"><b> 5</b></span>
+	<span style="--i:6;"><b> 6</b></span>
+	<span style="--i:7;"><b> 7</b></span>
+	<span style="--i:8;"><b> 8</b></span>
+	<span style="--i:9;"><b> 9</b></span>
+	<span style="--i:10;"><b> 10</b></span>
+	<span style="--i:11;"><b> 11</b></span>
+	<span style="--i:12;"><b> 12</b></span>
+	</div>
+    </div>
+	</div>
+	</div>
+
+	<!-- second-watch -->
+	<div class="second-watch">
+		<div id="time"></div>
+	</div>
+
+
+
+	<!-- calendar -->
+	<div id="calendarContainer"></div>
+
+</div>
+	</section> 
+
+	<!-- /*.........fifth-Project...........unit-changer.....................
+
+	*/ -->
+
+ <section class="unit-changer">
+<div class="container" >
+	<div class="box" >
+	<div class="title-box" style="text-align: center;">
+	<h1 style="color: white">Project-5</h1>	
+	<h1 style=" color: #ffffff">Unit-Changer</h1>
+</div>
+
+<div class="wrapper">
+	<h2 style="color: #ffd0d0;">Length Converter</h2>
+	<div class="input-inner">
+
+	<div class="input-box">
+	    <label >Feet</label>
+	    <input type="Number"  id="feet" placeholder="Feet" name="feet" class="feet">
+	</div>
+	<div class="equal">=</div>
+	<div class="input-box">
+	    <label >Inches</label>
+	    <input type="Number"  id="inch" placeholder="Inches" name="inch" class="Inches">
+	</div>
+</div>
+<div class="input-inner">
+	<div class="input-box">
+	    <label >Cm</label>
+	    <input type="Number"  id="Cm" placeholder="Cm" name="Cm" class="Cm">
+	</div>
+	<div class="equal">=</div>
+	<div class="input-box">
+	    <label >Meters</label>
+	    <input type="Number"  id="Meter" placeholder="Meters"  name="Meters" class="Meters">
+	</div>
+</div>
+	
+	<div class="input-inner">
+	<div class="input-box">
+	    <label >Yard</label>
+	    <input type="Number"  id="Yard" placeholder="Yard" name="Yard" class="Yard">
+	</div>
+	<div class="equal">=</div>
+	<div class="input-box">
+	    <label >Kilometers</label>
+	    <input type="Number"  id="km" name="km" placeholder="Kilometer"class="Kilometers">
+	</div>
+</div>
+	
+	<div class="input-inner">
+	<div class="input-box">
+	    <label >Miles</label>
+	    <input type="Number"  id="Miles"  name="Miles"placeholder="Miles" class="Miles">
+	</div>
+	<div class="equal">=</div>
+	<div class="input-box">
+	    <label >decimeter</label>
+	    <input type="Number"  id="dm" name="dm" placeholder="decimeter" class="decimeter">
+	</div>
+</div>
+       <h2 style="color: #ffd0d0;">Weight Converter</h2>
+	
+	<div class="input-inner">
+	<div class="input-box">
+	    <label >Pounds</label>
+	    <input type="Number"  id="Pounds" placeholder="Pounds"  name="Pounds" class="Pounds">
+	</div>
+	<div class="equal">=</div>
+	<div class="input-box">
+	    <label >Kilograms</label>
+	    <input type="Number"  id="Kg" name="Kg" placeholder="Kilograms" class="Kilograms">
+	</div>
+</div>
+	
+	<div class="input-inner">
+	<div class="input-box">
+	    <label >Ounces</label>
+	    <input type="Number"  id="Ounces" placeholder="Ounces"  name="Ounces" class="Ounces">
+	</div>
+	<div class="equal">=</div>
+	<div class="input-box">
+	    <label >Grams</label>
+	    <input type="Number"  id="Grams" placeholder="Grams" name="Grams" class="Grams">
+	</div>
+</div>
+	
+	<div class="input-inner">
+	<div class="input-box">
+	    <label >Stones</label>
+	    <input type="Number"  id="Stones" placeholder="Stones"  name="Stones" class="Stones">
+	</div>
+	<div class="equal">=</div>
+	<div class="input-box">
+	    <label >Ton</label>
+	    <input type="Number"  id="ton"  placeholder="Ton" name="ton" class="Ton">
+	</div>
+</div>
+      <h2 style="color: #ffd0d0;">Temperature Converter</h2>
+
+<div class="input-inner">
+	<div class="input-box">
+	    <label >Celsius</label>
+	    <input type="Number"  id="Celsius"  placeholder="Celsius" name="Celsius" class="Celsius">
+	</div>
+	<div class="equal">=</div>
+	<div class="input-box">
+	    <label >Fahrenheit</label>
+	    <input type="Number"  id="Fahrenheit" placeholder="Fahrenheit"  name="Fahrenheit" class="Fahrenheit">
+	</div>
+</div>
+
+ <h2 style="color: #ffd0d0;">Speed Converter</h2>
+ <div class="input-inner">
+ 	<div class="input-box">
+	    <label >KPH</label>
+	    <input type="Number"  id="KPH"  placeholder="KPH" name="KPH" class="KPH">
+	</div>
+	<div class="equal">=</div>
+	<div class="input-box">
+	    <label >MPH</label>
+	    <input type="Number"  id="MPH" placeholder="MPH"  name="MPH" class="MPH">
+	</div>
+</div>
+
+ <h2 style="color: #ffd0d0;">Time Converter</h2>
+ <div class="input-inner">
+	<div class="input-box">
+	    <label >Hour</label>
+	    <input type="Number"  id="Hour" placeholder="Hour"  name="Hour" class="Hour">
+	</div>
+	<div class="equal">=</div>
+	<div class="input-box">
+	    <label >Minute</label>
+	    <input type="Number"  id="Minute"  placeholder="Minute" name="Minute" class="Minute">
+	</div>
+</div>
+<div class="input-inner">
+	<div class="input-box">
+	    <label >Second</label>
+	    <input type="Number"  id="Second" placeholder="Second"  name="Second" class="Second">
+	</div>
+	<div class="equal">=</div>
+	<div class="input-box">
+	    <label >millisecond </label>
+	    <input type="Number"  id="millisecond"  placeholder="millisecond " name="millisecond " class="millisecond ">
+	</div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<button id="myBtn">Try it</button>
+
+<!--js-cdn-file-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+		<script src="js/script.js"></script>
+	</body>
+	</html>
